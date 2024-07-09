@@ -1,0 +1,32 @@
+.TH CHART 1 
+.SH NAME
+chart \- make neat ascii charts 
+.SH SYNOPSIS
+.B chart 
+.RI [ file ]
+.SH DESCRIPTION
+.B chart 
+Takes a ugly chart and makes it pretty
+.SH USAGE
+.TP
+Write a file with a few lines of data, each point seperated by a | charater
+
+Like so:
+
+x|y|z
+
+256|52|61
+
+6|5|125
+
+run chart on it for it to be nicely formated
+
+chart file.chart
+.SH OPTIONS
+.TP
+.B \-
+Read from stdin (default if no file is given)
+.SH EXIT STATUS
+.TP
+.B 0
+All is well
