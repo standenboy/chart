@@ -1,6 +1,6 @@
 CC = cc
 
-CFLAGS = -O2 -std=c99
+CFLAGS = 
 PREFIX = /usr/local/
 MAN = share/man
 BIN = bin/
