@@ -45,7 +45,6 @@ line *putinlines(FILE *f){
 		i++;
 		tok = strtok(NULL, "|");
 	} while (tok != NULL);
-
 	free(buffer);
 	free(strippedString);
 
@@ -54,7 +53,7 @@ line *putinlines(FILE *f){
 }
 
 char *padstring(char *string, int length){
-	char *paddedstring = malloc(length+1);
+	char *paddedstring = calloc(0, length+1);
 	int i;
 
 	for (i = 0; i < strlen(string); i++){

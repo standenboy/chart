@@ -1,6 +1,6 @@
 CC = cc
 
-CFLAGS = -O0
+CFLAGS = -ggdb -std=c99
 PREFIX = /usr/local/
 MAN = share/man
 BIN = bin/
