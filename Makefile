@@ -1,6 +1,6 @@
 CC = cc
 
-CFLAGS = 
+CFLAGS = -O0
 PREFIX = /usr/local/
 MAN = share/man
 BIN = bin/
