@@ -29,7 +29,7 @@ line *putinlines(FILE *f){
 	char *tok;
 	size_t i = 0;
 	
-	if (fgets(buffer, 256, f) == NULL || buffer[0] == '\n'){
+	if (fgets(buffer, 256, f) == NULL || strstr(buffer, "|") == NULL){
 		free(newline);
 		free(buffer);
 		return NULL;
